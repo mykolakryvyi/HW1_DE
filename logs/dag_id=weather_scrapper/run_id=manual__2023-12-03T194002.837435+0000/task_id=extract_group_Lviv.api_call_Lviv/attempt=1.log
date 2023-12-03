@@ -1,0 +1,15 @@
+[2023-12-03T19:40:09.283+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_scrapper.extract_group_Lviv.api_call_Lviv manual__2023-12-03T19:40:02.837435+00:00 [queued]>
+[2023-12-03T19:40:09.309+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_scrapper.extract_group_Lviv.api_call_Lviv manual__2023-12-03T19:40:02.837435+00:00 [queued]>
+[2023-12-03T19:40:09.315+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-03T19:40:09.409+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_group_Lviv.api_call_Lviv> on 2023-12-03 19:40:02.837435+00:00
+[2023-12-03T19:40:09.430+0000] {standard_task_runner.py:57} INFO - Started process 839 to run task
+[2023-12-03T19:40:09.446+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'weather_scrapper', 'extract_group_Lviv.api_call_Lviv', 'manual__2023-12-03T19:40:02.837435+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/weather_scrapper.py', '--cfg-path', '/tmp/tmplszi9w94']
+[2023-12-03T19:40:09.451+0000] {standard_task_runner.py:85} INFO - Job 55: Subtask extract_group_Lviv.api_call_Lviv
+[2023-12-03T19:40:09.568+0000] {task_command.py:416} INFO - Running <TaskInstance: weather_scrapper.extract_group_Lviv.api_call_Lviv manual__2023-12-03T19:40:02.837435+00:00 [running]> on host 046e595e6dd8
+[2023-12-03T19:40:09.780+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weather_scrapper' AIRFLOW_CTX_TASK_ID='extract_group_Lviv.api_call_Lviv' AIRFLOW_CTX_EXECUTION_DATE='2023-12-03T19:40:02.837435+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-03T19:40:02.837435+00:00'
+[2023-12-03T19:40:09.787+0000] {weather_scrapper.py:25} INFO - Lviv city, 2023-12-03 exec_Date_form, 1701561600 dt
+[2023-12-03T19:40:09.802+0000] {weather_scrapper.py:30} INFO - Lviv city, 2023-12-03 00:00:00 date, 1701561600 t
+[2023-12-03T19:40:09.802+0000] {python.py:194} INFO - Done. Returned value was: ('49.8397', '24.0297', 1701561600)
+[2023-12-03T19:40:09.890+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=weather_scrapper, task_id=extract_group_Lviv.api_call_Lviv, execution_date=20231203T194002, start_date=20231203T194009, end_date=20231203T194009
+[2023-12-03T19:40:09.992+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-03T19:40:10.068+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
